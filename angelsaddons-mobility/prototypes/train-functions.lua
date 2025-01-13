@@ -292,7 +292,7 @@ local function generate_train_recipe(ref_recipe, tiered_ingredients, technology_
       add_recipe_unlock(technology_name, recipe_name)
     end
   else
-    ref_recipe.ingredients = generate_tiered_ingredients(1, ref_recipe.ingredients)
+    ref_recipe.ingredients = generate_tiered_ingredients(1, tiered_ingredients)
     table.insert(recipes, ref_recipe)
 
     add_recipe_unlock(technology_name, ref_recipe.name)
